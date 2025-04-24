@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="html-cheat-sheet.html">HTML Cheat Sheet</a></li>
+            <li><a href="css-cheat-sheet.html" class="active">CSS Cheat Sheet</a></li>
+        </ul>
+        <button id="darkToggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+    <main>
+        <section class="cheat-sheet">
+            <h1>CSS Cheat Sheet</h1>
+            <div class="cheat-sheet-item">
+                <h3>Basic Syntax</h3>
+                <p><code>selector { property: value; }</code>: CSS rule structure, where a selector targets an HTML element, and properties define the styles applied to it.</p>
+            </div>
+            <div class="cheat-sheet-item">
+                <h3>Selectors</h3>
+                <p><code>*</code>: Universal selector, which applies styles to all elements on the page.</p>
+                <p><code>element</code>: Tag selector, which targets specific HTML elements by their tag name (e.g., <code>p</code>, <code>h1</code>).</p>
+                <p><code>.class</code>: Class selector, which targets elements with a specific class attribute (e.g., <code>.my-class</code>).</p>
+                <p><code>#id</code>: ID selector, which targets a specific element with a unique ID attribute (e.g., <code>#my-id</code>).</p>
+            </div>
+            <div class="cheat-sheet-item">
+                <h3>Box Model</h3>
+                <p><code>width</code>: Element width, which sets the width of the content area.</p>
+                <p><code>height</code>: Element height, which sets the height of the content area.</p>
+                <p><code>padding</code>: Inner space, which adds space between the content and the border of an element.</p>
+                </div>
+            <div class="cheat-sheet-item">
+                <h3>Text Properties</h3>
+                <p><code>color</code>: Text color, which sets the color of the text.</p>
+                <p><code>font-size</code>: Text size, which sets the size of the text.</p>
+                <p><code>font-family</code>: Font type, which sets the font family for the text.</p>
+                </div>
+            <div class="cheat-sheet-item">
+                <h3>Background Properties</h3>
+                <p><code>background-color</code>: Background color, which sets the background color of an element.</p>
+                <p><code>background-image</code>: Background image, which sets an image as the background of an element.</p>
+               </div>
+            <div class="cheat-sheet-item">
+                <h3>Display Properties</h3>
+<p><code>display: inline</code>: Inline element, which only takes up as much width as necessary and does not start on a new line.</p>
+                <p><code>display: inline-block</code>: Inline-block element, which is formatted as an inline element, but you can set a width and height.</p>
+                <p><code>display: flex</code>: Flex container, which enables flexbox layout.</p>
+                <p><code>display: grid</code>: Grid container, which enables grid layout.</p>
+            </div>
+            <div class="cheat-sheet-item">
+                <h3>Positioning</h3>
+                <p><code>position: relative</code>: Relative position, where the element is positioned relative to its normal position.</p>
+                <p><code>position: absolute</code>: Absolute position, where the element is positioned absolutely to its first positioned ancestor.</p>
+                <p><code>position: fixed</code>: Fixed position, where the element is positioned fixed relative to the viewport.</p>
+            </div>
+            <div class="cheat-sheet-item">
+                <h3>Flexbox Properties</h3>
+                <p><code>display: flex</code>: Defines a flex container; inline or block depending on the given value.</p>
+                <p><code>flex-direction</code>: Specifies the direction of the flexible items.</p>
+                <p><code>justify-content</code>: Aligns the flexible container's items on the main axis.</p>
+            </div>
+            <div class="cheat-sheet-item">
+                <h3>Grid Properties</h3>
+                <p><code>display: grid</code>: Defines a grid container.</p>
+                <p><code>grid-template-rows</code>: Specifies the number (and the height) of rows in a grid layout.</p>
+                <p><code>grid-gap</code>: Specifies the gap between the grid lines.</p>
+            </div>
+            <div class="cheat-sheet-item">
+                <h3>Transform</h3>
+                <p><code>transform: rotate(90deg)</code>: Rotates an element clockwise or counterclockwise.</p>
+                <p><code>transform: scale(1.2)</code>: Increases or decreases the size of an element.</p>
+            </div>
+            <div class="cheat-sheet-item">
+                <h3>Transitions</h3>
+                <p><code>transition: background-color 0.3s ease</code>: Creates smooth transitions.</p>
+                 <p><code>transition: transform 0.3s ease</code>: Specifies the CSS property the transition effect is for.</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

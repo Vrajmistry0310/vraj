@@ -1,0 +1,328 @@
+:root {
+    --bg: #ede6e6;
+    --text: #000000;
+    --primary: #2e3945;
+    --nav-bg: #c1c1c1;
+    --nav-link: #333;
+    --nav-link-active: hsl(0, 100%, 50%);
+    --section-bg: #b4b3b3;
+    --button-bg: #ffffff;
+    --button-text: #000000;
+    --button-hover-bg: #000000;
+    --button-hover-text: #fff;
+  }
+  
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    transition: background 0.4s, color 0.4s;
+  }
+  
+  /* Dark theme overrides */
+  body.dark-theme {
+    --bg: #181a1b;
+    --text: #e0e0e0;
+    --primary: #5b8ae0;
+    --nav-bg: #23272a;
+    --nav-link: #e0e0e0;
+    --nav-link-active: #4f8cff;
+    --section-bg: #23272a;
+    --button-bg: #4f8cff;
+    --button-text: #181a1b;
+    --button-hover-bg: #1e3a5c;
+    --button-hover-text: #fff;
+  }
+  
+  /* Navigation */
+  nav {
+    background: var(--nav-bg);
+    padding: 1em;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-bottom: 2px solid var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+  }
+  
+  nav li {
+    margin: 0;
+  }
+  
+  nav a {
+    color: var(--nav-link);
+    text-decoration: none;
+    padding: 0.5em 1.2em;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: color 0.3s, background 0.3s;
+  }
+  
+  nav a:hover,
+  nav .active {
+    color: var(--nav-link-active);
+    background: rgba(0, 123, 255, 0.1);
+  }
+  
+  #darkToggle {
+    background: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 50%;
+    width: 2.3em;
+    height: 2.3em;
+    margin-left: 1.5em;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  #darkToggle:hover {
+    background: var(--button-hover-bg);
+    color: var(--button-hover-text);
+  }
+  
+  /* Main Content Area */
+  main {
+    padding: 2em;
+  }
+  
+  /* Section Styles */
+  section {
+    margin-bottom: 2em;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: var(--section-bg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.4s;
+  }
+  
+  section h1,
+  section h2 {
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  /* Profile Section */
+  .profile {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .profile h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .profile .subtitle {
+    font-style: italic;
+    color: #6c757d;
+    margin-bottom: 20px;
+  }
+  
+  /* Contact Section */
+  .contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact li {
+    margin-bottom: 0.5em;
+  }
+  
+  .contact a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .contact a:hover {
+    color: var(--primary);
+  }
+  
+  /* Skills Section */
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .skill {
+    width: 45%;
+    margin-bottom: 1em;
+  }
+  
+  .skill label {
+    display: block;
+    margin-bottom: 0.3em;
+    color: #6c757d;
+  }
+  
+  .skill .progress {
+    background-color: #ddd;
+    border-radius: 10px;
+    height: 15px;
+    overflow: hidden;
+  }
+  
+  .skill .progress-bar {
+    background-color: var(--primary);
+    height: 100%;
+    transition: width 0.5s;
+  }
+  
+  /* Experience and Education Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th,
+  td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: var(--primary);
+    color: #fff;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Portfolio Section */
+  .portfolio-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .portfolio-item {
+    width: 45%;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  
+  .portfolio-images img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .portfolio-images img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Cheat Sheet Styles */
+  .cheat-sheet {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+  }
+  
+  .cheat-sheet-item {
+    background-color: var(--section-bg);
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cheat-sheet-item h3 {
+    color: var(--primary);
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid var(--primary);
+    padding-bottom: 0.3em;
+  }
+  
+  .cheat-sheet-item p {
+    margin-bottom: 0.5em;
+  }
+  
+  /* CTA Section */
+  .cta {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .cta a,
+  .button,
+  button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: inline-block;
+    margin: 0.5em 0;
+    text-decoration: none;
+  }
+  
+  .cta a:hover,
+  .button:hover,
+  button:hover {
+    background-color: var(--button-hover-bg);
+    color: var(--button-hover-text);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.14);
+    text-decoration: underline;
+  }
+  
+  /* About Page Banner Image */
+.about-banner {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.portfolio-item {
+  width: 45%;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.portfolio-images img {
+  height: 75;
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.portfolio-images img:hover {
+  transform: scale(1.1);
+}

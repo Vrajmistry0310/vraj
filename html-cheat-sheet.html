@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheat Sheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="html-cheat-sheet.html" class="active">HTML Cheat Sheet</a></li>
+            <li><a href="css-cheat-sheet.html">CSS Cheat Sheet</a></li>
+        </ul>
+        <button id="darkToggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+    <main>
+        <section class="cheat-sheet">
+            <h1>HTML Cheat Sheet</h1>
+            <div class="cheat-sheet-item">
+                <h3>Basic Structure</h3>
+                <p><code>&lt;!DOCTYPE html&gt;</code>: Declares the document type as HTML5. It tells the browser that this is an HTML5 document.</p>
+                <p><code>&lt;head&gt;</code>: Contains meta-information about the HTML page, such as title, character set.</p>
+                <p><code>&lt;title&gt;</code>: Specifies a title for the HTML page, which is shown in the browser's title bar or tab.</p>
+                <p><code>&lt;body&gt;</code>: Defines the document's body and contains all the content such as headings, paragraphs, images, and more.</p>
+            </div>
+            <div class="cheat-sheet-item">
+                <h3>Text Formatting</h3>
+                <p><code>&lt;h1&gt; to &lt;h6&gt;</code>: Defines HTML headings, with <code>&lt;h1&gt;</code> being the most important and <code>&lt;h6&gt;</code> the least.</p>
+                 <p><code>&lt;br&gt;</code>: Inserts a single line break.</p>
+                <p><code>&lt;hr&gt;</code>: Defines a thematic break in an HTML page (horizontal rule).</p>
+                <p><code>&lt;pre&gt;</code>: Defines preformatted text, which is displayed in a fixed-width font, and spaces and line breaks are preserved.</p>
+            </div>
+            <div class="cheat-sheet-item">
+                <h3>Links</h3>
+                <p><code>&lt;a href="url"&gt;link text&lt;/a&gt;</code>: Defines a hyperlink, which is used to link to other web pages or resources.</p>
+                <p><code>&lt;a target="_blank" href="url"&gt;link text&lt;/a&gt;</code>: Opens the linked document in a new window or tab, using the <code>target="_blank"</code> attribute.</p>
+            </div>
+            <div class="cheat-sheet-item">
+                <h3>Images</h3>
+                <p><code>&lt;img src="url" alt="alt text"&gt;</code>: Defines an image, where <code>src</code> specifies the URL of the image, and <code>alt</code> provides alternative text if the image cannot be displayed.</p>
+            </div>
+            <div class="cheat-sheet-item">
+                <h3>Lists</h3>
+                <p><code>&lt;ul&gt;</code>: Defines an unordered (bulleted) list.</p>
+                <p><code>&lt;ol&gt;</code>: Defines an ordered (numbered) list.</p>
+                <p><code>&lt;li&gt;</code>: Defines a list item, which is used inside <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> elements.</p>
+            </div>
+            <div class="cheat-sheet-item">
+                <h3>Tables</h3>
+                <p><code>&lt;table&gt;</code>: Defines a table.</p>
+                <p><code>&lt;tr&gt;</code>: Defines a row in a table.</p>
+                <p><code>&lt;th&gt;</code>: Defines a header cell in a table.</p>
+                <p><code>&lt;td&gt;</code>: Defines a data cell in a table.</p>
+            </div>
+            <div class="cheat-sheet-item">
+                <h3>Forms</h3>
+                <p><code>&lt;form&gt;</code>: Defines an HTML form, which is used to collect user input.</p>
+                <p><code>&lt;input&gt;</code>: Defines an input field, which can be of various types such as text, password, or email.</p>
+                 <p><code>&lt;button&gt;</code>: Defines a clickable button, which can be used to submit a form or perform other actions.</p>
+            </div>
+            <div class="cheat-sheet-item">
+                <h3>Semantic Elements</h3>
+                <p><code>&lt;header&gt;</code>: Defines a header for a document or section, typically containing the site title and navigation links.</p>
+                <p><code>&lt;nav&gt;</code>: Defines a set of navigation links.</p>
+                <p><code>&lt;footer&gt;</code>: Defines a footer for a document.</p>
+            </div>
+            <div class="cheat-sheet-item">
+                <h3>Meta Tags</h3>
+                <p><code>&lt;meta charset="UTF-8"&gt;</code>: Defines the character set used for the HTML document, typically set to UTF-8.</p>
+                <p><code>&lt;meta name="author" content="author"&gt;</code>: Defines the author of the page.</p>
+                <p><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>: Sets the viewport for responsive design.</p>
+            </div>
+             <div class="cheat-sheet-item">
+                <h3>Divs and Spans</h3>
+                <p><code>&lt;div&gt;</code>: Defines a division or a section in an HTML document..</p>
+                <p><code>&lt;span&gt;</code>: Is an inline container used to mark up a part of a text..</p>
+            </div>
+             <div class="cheat-sheet-item">
+                <h3>Iframes</h3>
+                <p><code>&lt;iframe src="url"&gt;&lt;/iframe&gt;</code>: Used to embed another document within the current HTML document</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
